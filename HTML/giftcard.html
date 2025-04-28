@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../IMAGES/logo.png">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link src="../HTML/Howitworks.html">
+    <link src="../HTML/Membership Plan $ Pricing.html">
+    <link src="../HTML/compare.html">
+    <link src="../HTML/Services.html">
+    <link src="../HTML/Stylist.html">
+    <link src="../HTML/giftcard.html">
+    <link src="../index.html">
+    <link rel="stylesheet" href="../h style.css">
+    <link rel="stylesheet" href="../CSS/giftcard.css">
+    <link src="../HTML/lookbook.html">
+    <script src="../js/calculator.js" defer></script>
+    <link rel="stylesheet" href="../CSS/Detox Close.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+.button {
+  background-color: rgb(216, 176, 101);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+ 
+  border: 2px solid black;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.button1 {
+  background-color: rgb(216, 176, 101);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.button1:hover {
+  background-color: #000;
+  color: white;
+ 
+
+ }
+ .button2 {
+  background-color: rgb(216, 176, 101);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.button2:hover {
+  background-color: #000;
+  color: white;
+ 
+  }
+  .button3 {
+  background-color: rgb(216, 176, 101);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.button3:hover {
+  background-color: #000;
+  color: white;
+ 
+   }
+
+
+    /* Remove default password reveal button */
+    input[type="password"]::-ms-reveal,
+    input[type="password"]::-ms-clear {
+      display: none;
+    }
+
+    input[type="password"] {
+      background: none !important;
+      background-image: none !important;
+    }
+
+    /* Error message style */
+    .error {
+      color: red;
+      font-size: 0.875em;
+      margin-top: 5px;
+    }
+  
+</style>
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div style="display: inline-block; background-color: wheat; padding: 10px; border-radius: 10px;">
+            <img src="/IMAGES/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+    
+          <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="Howitworks.html">HOWITWORK</a>
+                  <a class="nav-link" href="Membership Plan $ Pricing.html">MEMBERSHIP</a>
+                  <a class="nav-link" href="Services.html">SERVICES</a>
+                  <a class="nav-link" href="giftcard.html">GIFTCARD</a>
+                  <a class="nav-link" href="Stylist.html">STYLIST</a>
+                  <a class="nav-link" href="compare.html">COMPARED </a>
+                  <a class="nav-link" href="lookbook.html">LOOKBOOK</a>
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+                </div>
+    
+                <div class="d-flex gap-2">  <!-- Buttons container -->
+                  <!-- LOGIN Button trigger modal -->
+                  <button type="button" class="custom-btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    LOGIN
+                  </button>
+      
+                  <!-- JOIN Button trigger modal -->
+                  <button type="button" class="custom-btn-1" data-bs-toggle="modal" data-bs-target="#joinModal">
+                    JOIN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+  
+      
+<!-- LOGIN Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="myForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Please Enter Your Name*">
+            <div class="error" id="nameError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="email" placeholder="Please Enter Your E-mail*">
+            <div class="error" id="emailError"></div>
+          </div>
+          <div class="mb-3 position-relative">
+            <label for="loginPassword" class="form-label">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="loginPassword" placeholder="Create a password*" aria-describedby="toggleLoginPassword">
+              <button class="btn btn-outline-secondary" type="button" id="toggleLoginPassword">
+                <i class="fa fa-eye" id="eyeIconLogin"></i>
+              </button>
+            </div>
+            <div class="error" id="loginPasswordError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" placeholder="Please Enter Your Message*" rows="4"></textarea>
+            <div class="error" id="messageError"></div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="button1" form="myForm">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JOIN Modal -->
+<div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="joinModalLabel">JOIN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="joinForm">
+          <div class="mb-3">
+            <label for="joinName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="joinName" placeholder="Enter your full name*">
+            <div class="error" id="joinNameError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="joinEmail" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="joinEmail" placeholder="Enter your e-mail*">
+            <div class="error" id="joinEmailError"></div>
+          </div>
+          <div class="mb-3 position-relative">
+            <label for="joinPassword" class="form-label">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="joinPassword" placeholder="Create a password*" aria-describedby="toggleJoinPassword">
+              <button class="btn btn-outline-secondary" type="button" id="toggleJoinPassword">
+                <i class="fa fa-eye" id="eyeIconJoin"></i>
+              </button>
+            </div>
+            <div class="error" id="joinPasswordError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="joinMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="joinMessage" placeholder="Your message (optional)" rows="4"></textarea>
+            <div class="error" id="joinMessageError"></div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="button1" form="joinForm">Join</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+</header>
+<hr>
+  <div class="container-fluid p-0">
+    <div class="container-fluid p-0">
+      <div class="row g-0 content-center">
+        <div class="col-md-12 p-0 position-relative" style="height: 70vh; overflow: hidden;">
+          
+          <!-- Image absolutely positioned from top -->
+          <img src="../IMAGES/Gift Card_banner.jpg" alt="services"
+               class="w-100 position-absolute top-0 start-0"
+               style="height: auto; min-height: 100%;">
+    
+          <!-- Centered Text -->
+         
+    
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+<!-- Why Our Gift Cards -->
+<section class="container text-center mb-5 mt-5">
+  <h2 class="mb-4">Why Our Gift Cards?</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <i class="fas fa-gift fa-3x mb-3"></i>
+      <h5>Flexible Amounts</h5>
+      <p>Choose from Rs. 500, Rs. 1000, Rs. 2000, or customize your own amount.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-envelope fa-3x mb-3"></i>
+      <h5>Instant Delivery</h5>
+      <p>Delivered straight to inbox. Ready to use immediately.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-heart fa-3x mb-3"></i>
+      <h5>Personalized Touch</h5>
+      <p>Add a sweet message to make it even more special.</p>
+    </div>
+  </div>
+</section>
+<!-- Gift Card Options -->
+<section class="container my-5" id="giftCards">
+    <h2 class="text-center mb-4">Choose Your Gift Card</h2>
+    <div class="row justify-content-center g-4">
+      <!-- Rs. 500 Card -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <img src="../IMAGES/card9.webp" class="card-img-top" alt="Rs. 500 Gift Card">
+          <div class="card-body">
+            <h5 class="card-title">Rs. 500 Gift Card</h5>
+            <p class="card-text">Perfect for small surprises.</p>
+            <button class="button" onclick="openModal(500)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Rs. 1000 Card -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <img src="../IMAGES/card8.webp" class="card-img-top" alt="Rs. 1000 Gift Card">
+          <div class="card-body">
+            <h5 class="card-title">Rs. 1000 Gift Card</h5>
+            <p class="card-text">A gift for something special.</p>
+            <button class="button" onclick="openModal(1000)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          
+            <img src="../IMAGES/card7.webp" alt="Rs. 2000 Gift Card"  class="card-img-top"  />
+          
+          <div class="card-body">
+            <h5 class="card-title">Rs. 2000 Gift Card</h5>
+            <p class="card-text">Go big with style.</p>
+            <button class="button" onclick="openModal(2000)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      
+      
+  
+    </div>
+  </section>
+
+  <section class="container my-5" >
+   
+    <div class="row justify-content-center g-4">
+      <!-- Rs. 500 Card -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <img src="../IMAGES/card10.webp" class="card-img-top" alt="Rs. 500 Gift Card">
+          <div class="card-body">
+            <h5 class="card-title">Rs. 500 Gift Card</h5>
+            <p class="card-text">Perfect for small surprises.</p>
+            <button class="button" onclick="openModal(500)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Rs. 1000 Card -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <img src="../IMAGES/card12.webp" class="card-img-top" alt="Rs. 1000 Gift Card">
+          <div class="card-body">
+            <h5 class="card-title">Rs. 1000 Gift Card</h5>
+            <p class="card-text">A gift for something special.</p>
+            <button class="button" onclick="openModal(1000)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          
+            <img src="../IMAGES/card13.webp" alt="Rs. 2000 Gift Card"  class="card-img-top"  />
+          
+          <div class="card-body">
+            <h5 class="card-title">Rs. 2000 Gift Card</h5>
+            <p class="card-text">Go big with style.</p>
+            <button class="button" onclick="openModal(2000)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      
+      
+  
+    </div>
+  </section>
+
+
+  <section class="container my-5" id="giftCards">
+   
+    <div class="row justify-content-center g-4">
+      <!-- Rs. 500 Card -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <img src="../IMAGES/card14.webp" class="card-img-top" alt="Rs. 500 Gift Card">
+          <div class="card-body">
+            <h5 class="card-title">Rs. 500 Gift Card</h5>
+            <p class="card-text">Perfect for small surprises.</p>
+            <button class="button" onclick="openModal(500)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Rs. 1000 Card -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <img src="../IMAGES/card15.webp" class="card-img-top" alt="Rs. 1000 Gift Card">
+          <div class="card-body">
+            <h5 class="card-title">Rs. 1000 Gift Card</h5>
+            <p class="card-text">A gift for something special.</p>
+            <button class="button" onclick="openModal(1000)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          
+            <img src="../IMAGES/card16.webp" alt="Rs. 2000 Gift Card"  class="card-img-top"  />
+          
+          <div class="card-body">
+            <h5 class="card-title">Rs. 2000 Gift Card</h5>
+            <p class="card-text">Go big with style.</p>
+            <button class="button" onclick="openModal(2000)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      
+      
+  
+    </div>
+  </section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="giftModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="giftForm" onsubmit="handlePurchase(event)">
+        <div class="modal-header">
+          <h5 class="modal-title">Purchase Gift Card</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>You're buying a <strong id="modalAmount">Rs. 0</strong> gift card.</p>
+          <input type="email" id="recipientEmail" class="form-control mb-3" placeholder="Recipient Email" required />
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-dark">Send Gift Card</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Success Alert -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11;">
+  <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body">Gift card sent successfully!</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Script -->
+<script>
+  let selectedAmount = 0;
+
+  function openModal(amount) {
+    selectedAmount = amount;
+    document.getElementById("modalAmount").innerText = `Rs. ${amount}`;
+    const modal = new bootstrap.Modal(document.getElementById("giftModal"));
+    modal.show();
+  }
+
+  function handlePurchase(event) {
+    event.preventDefault();
+    const email = document.getElementById("recipientEmail").value;
+    console.log(`Gift card of Rs. ${selectedAmount} sent to: ${email}`);
+    
+    const modal = bootstrap.Modal.getInstance(document.getElementById("giftModal"));
+    modal.hide();
+
+    const toast = new bootstrap.Toast(document.getElementById("successToast"));
+    toast.show();
+
+    document.getElementById("giftForm").reset();
+  }
+</script>
+
+
+
+
+<!--Form-->
+<div class="container-fluid  px-0" id="form" >
+  <div class="row justify-content-center">
+     <div class="col-md-12 col-lg-6  text-center"> <!--all 12 column then 6 column of days-->
+      <h5 class="title">DELIVERY DATE</h5>
+      <h1 class="sub-title">GIFT OPTIONS</h1>
+     </div>
+  </div>
+</div>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="form-container p-4 shadow-lg bg-white rounded">
+      <form>
+          <div class="mb-3">
+              <label for="toname" class="form-label">To Name</label>
+              <input type="text" class="form-control" id="toname" placeholder="Please Enter Your Name*" required>
+          </div>
+
+          <div class="mb-3">
+              <label for="toemail" class="form-label">To E-mail</label>
+              <input type="email" class="form-control" id="toemail" placeholder="Please Enter Your E-mail*" required>
+          </div>
+
+          <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" placeholder="Please Enter Your Message*" rows="4" required></textarea>
+          </div>
+
+          <div class="mb-3">
+              <label for="fromname" class="form-label">From Name</label>
+              <input type="text" class="form-control" id="fromname" placeholder="Please Enter Your Name*" required>
+          </div>
+
+          <div class="mb-3">
+              <label for="fromemail" class="form-label">From E-mail</label>
+              <input type="email" class="form-control" id="fromemail" placeholder="Please Enter Your E-mail*" required>
+          </div>
+
+          <button type="submit" class="button2 w-100">PURCHASE GIFT CARD</button>
+      </form>
+  </div>
+</div>
+
+<!-- Gift Card Banner -->
+<section class="container my-5 text-center">
+  <img src="../IMAGES/banner3.webp" alt="Gift Card Banner" class="img-fluid rounded w-100" />
+</section>
+
+
+
+<div class="container-fluid bg-custom4"> 
+  <div class="row justify-content-center text-center py-5"> <!--py is used for give the top and bottom padding-->
+      <div class="col-md-8 col-12">
+          <h1 class="mb-2"  style="font-size: 3rem; line-height: 1; font-family: 'Times New Roman', Times, serif;"> GIFT CARDS</h1>
+          <p class="mb-2">Gift in style. With The Stīl Trust Gift Card, you can connect a friend or loved one with a professional stylist who will <br>curate looks to meet their unique style and needs.</p>
+          <div class="d-flex justify-content-center mx-auto mt-4">
+              <a href="giftcard.html">
+              <button class="button3">BUY A GIFT CARD</button>
+          </a>
+         </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-custom5">
+  <div class="row justify-content-center text-center py-5 ">
+      <div class="col-md-8 col-12 px-0">
+          <h1 class="mb-2 "  style="font-size: 2rem; line-height: 1; font-family: 'Times New Roman', Times, serif;"> FLEXIBLE MEMBERSHIPS</h1>
+          <p class="mb-2">Whether you need style advice on a monthly basis or a few times a year, we have a membership that’s right for <br>you: Monthly or Seasonal. Sign up for membership today with code FIRST10, and get 10% off your first year of membership!</p>
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row gap-3 mx-auto mt-4">
+              <a href="Membership Plan $ Pricing.html">
+              <button class="button3 px-4 py-2 ">SEE OUR PLANS</button>
+              </a>
+              
+              <a href="Join Today.html" target="_blank">
+              <button class="button3 px-4 py-2"> JOIN TODAY </button>
+          </a>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+
+<footer class="w-100 custom-bg text-center pt-4 position-relative">
+  <div class="container-fluid">
+    <section class="mb-4 d-flex flex-nowrap justify-content-center align-items-center w-100 overflow-auto">
+      <!-- Facebook -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.facebook.com/" target="_blank" role="button">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://twitter.com/" target="_blank" role="button">
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <!-- Google (usually Gmail or Google account) -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.google.com/" target="_blank" role="button">
+        <i class="fab fa-google"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.instagram.com/" target="_blank" role="button">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.linkedin.com/" target="_blank" role="button">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <!-- Github -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://github.com/" target="_blank" role="button">
+        <i class="fab fa-github"></i>
+      </a>
+    </section>
+  </div>
+
+  <div class="w-100 p-3 text-white" style="background-color: black;">
+    © 2024 Copyright:
+    <a class="fw-bold text-white" href="/index.html" target="_blank">OnlineFashionShopping.com</a>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

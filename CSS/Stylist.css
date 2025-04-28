@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: wheat !important;
+}
+
+/* CARD STYLING*/
+.stylist-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+}
+
+.stylist-card:hover {
+    filter: brightness(1); /* Lighten effect on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.stylist-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.stylist-card:active {
+    filter: brightness(0.9); /* Darken effect on click */
+}
+
+.stylist-name:hover {
+    color: #d63384; /* Change text color when clicked */
+}
+
+.button{
+    border: black solid 3px;
+    color: black;
+    border-radius: 50px;
+    height: 60px;
+    width: 180px;
+    background-color: rgb(216, 176, 101) ;
+  
+}
+.button:hover{
+    border: black solid 3px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    height: 60px;
+    width: 180px;
+}
+.bg-custom1{
+    background-color: rgb(216, 176, 101);
+}
+.bg-custom2{
+    background-color: rgb(202, 168, 104);
+}
+.bg-custom3{
+    background-color: rgb(216, 176, 101);
+}
+.bg-custom4{
+    background-color: rgb(202, 168, 104);
+}
+.bg-custom5{
+    background-color: rgb(216, 176, 101); 
+}
+.bg-custom{
+   color: rgb(216, 185, 127);
+}
+.underline {
+    width: 120px;
+    height: 4px;
+    background-color: gray;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0px;  /* Yeh value adjust kar sakti ho overlap ke liye */
+}
+
+/*Footer Styling*/
+.custom-bg{
+    background-color: rgb(184, 159, 114);
+    width: 100%;
+}
+
+.custom-bg:hover{
+    color: rgb(44, 42, 42);
+    background-color: rgb(184, 159, 114);
+    width: 100%;
+}
+i:hover{
+    color: black;
+    width: 100%;
+}
+
+ a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+
+/*Navbar Styling*/
+.custom-btn{
+    background-color: black;
+    color: white;
+}
+.custom-btn-1{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+    padding: 0 20px;
+    width: 100px;
+    height: 45px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    
+}
+.custom-btn-2{
+    color: white;
+}
+
+.custom-btn-1:hover{
+    color:wheat;
+    padding: 0 20px;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+.custom-btn-2:hover{
+    color: wheat;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-link:hover::after{
+    transform: scaleX(1);
+  }
+
+  /* Styling of form */
+  .button1{
+    align-items: center;
+    border: 2px solid black;
+    color: black;
+    border-radius: 50px;
+    height: 50px;
+    width: 500px;
+    background-color: rgb(216, 176, 101) ;
+  }
+  .button1:hover{
+    background-color: black;
+    color: wheat;
+  }

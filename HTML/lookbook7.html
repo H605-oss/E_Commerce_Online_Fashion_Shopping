@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../IMAGES/logo.png">
+    <title>stylists</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link src="../HTML/giftcard.html">
+    <link src="../HTML/Howitworks.html">
+    <link src="../HTML/Membership Plan $ Pricing.html">
+    <link src="../HTML/Services.html">
+    <link src="../HTML/Stylist.html">
+    <link src="../HTML/contact.html">
+    <link src="../HTML/compare.html">
+    <link src="../HTML/lookbook.html">
+    <script src="../js/validation.js" defer></script>
+    <link rel="stylesheet" href="../CSS/Stylist.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+      /* Remove default password reveal button */
+      input[type="password"]::-ms-reveal,
+      input[type="password"]::-ms-clear {
+        display: none;
+      }
+  
+      input[type="password"] {
+        background: none !important;
+        background-image: none !important;
+      }
+  
+      /* Error message style */
+      .error {
+        color: red;
+        font-size: 0.875em;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div style="display: inline-block; background-color: wheat; padding: 10px; border-radius: 10px;">
+            <img src="/IMAGES/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+    
+          <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="Howitworks.html">HOWITWORK</a>
+                  <a class="nav-link" href="Membership Plan $ Pricing.html">MEMBERSHIP</a>
+                  <a class="nav-link" href="Services.html">SERVICES</a>
+                  <a class="nav-link" href="giftcard.html">GIFTCARD</a>
+                  <a class="nav-link" href="Stylist.html">STYLIST</a>
+                  <a class="nav-link" href="compare.html">COMPARED </a>
+                  <a class="nav-link" href="lookbook.html">LOOKBOOK</a>
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+                </div>
+    
+                <div class="d-flex gap-2">  <!-- Buttons container -->
+                  <!-- LOGIN Button trigger modal -->
+                  <button type="button" class="custom-btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    LOGIN
+                  </button>
+      
+                  <!-- JOIN Button trigger modal -->
+                  <button type="button" class="custom-btn-1" data-bs-toggle="modal" data-bs-target="#joinModal">
+                    JOIN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+  
+      
+<!-- LOGIN Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="myForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Please Enter Your Name*">
+            <div class="error" id="nameError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="email" placeholder="Please Enter Your E-mail*">
+            <div class="error" id="emailError"></div>
+          </div>
+          <div class="mb-3 position-relative">
+            <label for="loginPassword" class="form-label">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="loginPassword" placeholder="Create a password*" aria-describedby="toggleLoginPassword">
+              <button class="btn btn-outline-secondary" type="button" id="toggleLoginPassword">
+                <i class="fa fa-eye" id="eyeIconLogin"></i>
+              </button>
+            </div>
+            <div class="error" id="loginPasswordError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" placeholder="Please Enter Your Message*" rows="4"></textarea>
+            <div class="error" id="messageError"></div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="button1" form="myForm">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JOIN Modal -->
+<div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="joinModalLabel">JOIN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="joinForm">
+          <div class="mb-3">
+            <label for="joinName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="joinName" placeholder="Enter your full name*">
+            <div class="error" id="joinNameError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="joinEmail" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="joinEmail" placeholder="Enter your e-mail*">
+            <div class="error" id="joinEmailError"></div>
+          </div>
+          <div class="mb-3 position-relative">
+            <label for="joinPassword" class="form-label">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="joinPassword" placeholder="Create a password*" aria-describedby="toggleJoinPassword">
+              <button class="btn btn-outline-secondary" type="button" id="toggleJoinPassword">
+                <i class="fa fa-eye" id="eyeIconJoin"></i>
+              </button>
+            </div>
+            <div class="error" id="joinPasswordError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="joinMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="joinMessage" placeholder="Your message (optional)" rows="4"></textarea>
+            <div class="error" id="joinMessageError"></div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="button1" form="joinForm">Join</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+</header>
+    <div class="container text-center mt-3 position-relative ">
+
+        <!-- Large "S" Heading -->
+        <h1 class="display-1 fw-bold bg-custom" style="font-size: 10rem; line-height: 1; font-family: 'Times New Roman', Times, serif;">S</h1>
+    
+        <!-- Overlapping Small Heading -->
+        <h3 class="position-absolute top-50 start-50 translate-middle text-dark fw-bold" style="font-family: 'Times New Roman', Times, serif;">Style Your Lookbook</h3>
+    
+        <!-- Underline -->
+        <div class="underline mx-auto mt-2"></div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center mt-5">
+            <div class="col-md-8 col-12">
+                <h3>TRANSITION TO SUMMER</h3>
+                <p class="mb-2">Spring is finally here and we can start wearing lighter layers. We can also start bringing back some <br> color into our wardrobe. Blue is in this season and our stylists have put together some great looks for <br> you to inspire you. </p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center mt-5">
+            <div class="col-md-8 col-12">
+                <h2>Want A Personalized Look?</h2>
+                <p class="mb-2">Get started now, and book your first online style consult today! Let our expert personal stylists help you save time <br> & look your best. </p>
+                <p class="mb-2">Learn more about our  <a href="Membership Plan $ Pricing.html"> <b> Online Styling Membership </b> </a> options here.</p>
+                <div class="d-flex justify-content-center mx-auto mt-4">
+                    <a href="Join today.html">
+                    <button class="button">BOOK NOW</button>
+                </a>
+               </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center my-5">
+      <div class="row g-4">
+          <div class="col-md-4">
+              <div class="card stylist-card">
+                  <img src="../IMAGES/Sandy1.jpg" class="card-img-top" alt="Nicole">
+                  
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card stylist-card">
+                  <img src="../IMAGES/Sandy2.jpg" class="card-img-top" alt="Christina">
+                  
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card stylist-card">
+                  <img src="../IMAGES/Sandy3.jpg" class="card-img-top" alt="Gabriella">
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+      <div class="container-fluid bg-custom4">
+        <div class="row justify-content-center text-center py-5">
+          <div class="col-md-8 col-12 px-0">
+            <h1 class="mb-2" style="font-size: 2rem; line-height: 1; font-family: 'Times New Roman', Times, serif;">
+              THE PERFECT GIFT FOR EVERY OCCASION
+            </h1>
+            <p class="mb-2">
+              Treat your loved ones to a style experience they’ll never forget. Our gift cards can be used towards any stylist session,<br> 
+              outfit selection, or premium membership. Whether it's a birthday, anniversary, or just because — it’s a gift that fits all sizes!
+            </p>
+            <div class="d-flex justify-content-center align-items-center flex-column flex-md-row gap-3 mx-auto mt-4">
+               <a href="../PDF/Stylist 1.docx" download target="_blank">
+                <button class="button px-4 py-2">VIEW DETAILS</button>
+              </a>
+              <a href="giftcard.html" target="_blank">
+                <button class="button px-4 py-2">BUY A GIFT CARD</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+      <div class="container-fluid bg-custom5">
+        <div class="row justify-content-center text-center py-5 ">
+            <div class="col-md-8 col-12 px-0">
+                <h1 class="mb-2 "  style="font-size: 2rem; line-height: 1; font-family: 'Times New Roman', Times, serif;"> FLEXIBLE MEMBERSHIPS</h1>
+                <p class="mb-2">Whether you need style advice on a monthly basis or a few times a year, we have a membership that’s right for <br>you: Monthly or Seasonal. Sign up for membership today with code FIRST10, and get 10% off your first year of membership!</p>
+                <div class="d-flex justify-content-center align-items-center flex-column flex-md-row gap-3 mx-auto mt-4">
+                    <a href="Membership Plan $ Pricing.html">
+                    <button class="button px-4 py-2 ">SEE OUR PLANS</button>
+                    </a>
+                    
+                    <a href="Join Today.html" target="_blank">
+                    <button class="button px-4 py-2"> JOIN TODAY </button>
+                </a>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+        
+<footer class="w-100 custom-bg text-center pt-4 position-relative">
+    <div class="container-fluid">
+      <section class="mb-4 d-flex flex-nowrap justify-content-center align-items-center w-100 overflow-auto">
+        <!-- Facebook -->
+        <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.facebook.com/" target="_blank" role="button">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://twitter.com/" target="_blank" role="button">
+          <i class="fab fa-twitter"></i>
+        </a>
+  
+        <!-- Google (usually Gmail or Google account) -->
+        <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.google.com/" target="_blank" role="button">
+          <i class="fab fa-google"></i>
+        </a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.instagram.com/" target="_blank" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.linkedin.com/" target="_blank" role="button">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://github.com/" target="_blank" role="button">
+          <i class="fab fa-github"></i>
+        </a>
+      </section>
+    </div>
+  
+    <div class="w-100 p-3 text-white" style="background-color: black;">
+      © 2024 Copyright:
+      <a class="fw-bold text-white" href="/index.html" target="_blank">OnlineFashionShopping.com</a>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  </body>
+  </html>
+  
+      

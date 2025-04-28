@@ -1,0 +1,76 @@
+.button2{
+    background-color:  rgb(216, 185, 127) !important;
+    color: black;
+    height: 50px;
+    border: 2px solid black;
+    width: 200px;
+}
+.button2:hover{
+    background-color: black !important;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+}
+.button3{
+    background-color:  rgb(216, 185, 127) !important;
+    color: black;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.button3:hover{
+    background-color: black !important;
+    color: white ; 
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+/* Form container: dark brown background */
+.form-container {
+    background-color:  rgb(216, 185, 127) !important;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  /* Inputs and Textareas: white background */
+  .form-container input,
+  .form-container textarea {
+    background-color: white;    /* Keep field background white */
+    color: black;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  /* On focus: wheat border and glow */
+  .form-container input:focus,
+  .form-container textarea:focus {
+    border: 2px solid wheat;
+    outline: none;
+    box-shadow: 0 0 0 0.15rem rgba(245, 222, 179, 0.5); /* Wheat glow */
+  }
+
+  /*Footer Styling*/
+.custom-bg{
+  background-color: rgb(184, 159, 114);
+  width: 100%;
+}
+
+.custom-bg:hover{
+  color: rgb(44, 42, 42);
+  background-color: rgb(184, 159, 114);
+  width: 100%;
+}
+i:hover{
+  color: black;
+  width: 100%;
+}
+
+a{
+  text-decoration: none !important;
+  color: inherit !important;
+}
+  

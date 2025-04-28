@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: wheat !important;
+}
+img{
+  object-fit: cover;
+  display: block;
+  
+}  
+.content-container {
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+}
+.text-container {
+  padding: 40px;
+  background-color: #f8f9fa; /* Light grey background */
+}
+.text-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.btn-learn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.bg-custom1{
+  background-color: rgb(216, 176, 101)!important;
+}
+.bg-custom2{
+  background-color: rgb(202, 168, 104) !important;
+}
+.bg-custom3{
+  background-color: rgb(216, 176, 101) !important;
+}
+.bg-custom4{
+  background-color: rgb(202, 168, 104);
+}
+.bg-custom5{
+  background-color: rgb(216, 176, 101); 
+}
+.bg-custom{
+ color: rgb(216, 185, 127);
+}
+.underline {
+  width: 120px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0px;  /* Yeh value adjust kar sakti ho overlap ke liye */
+}
+
+
+
+
+
+
+
+.custom-btn {
+  border: 3px solid black !important;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  background-color: black;
+}
+.custom-btn:hover {
+  background-color: wheat;
+  color: black;
+}
+
+
+.custom-bg{
+  background-color: rgb(184, 159, 114);
+  width: 100%;
+}
+.custom-bg{
+  background-color: rgb(184, 159, 114);
+  width: 100%;
+}
+
+.custom-bg:hover{
+  color: rgb(44, 42, 42);
+  background-color: rgb(184, 159, 114);
+  width: 100%;
+}
+i:hover{
+  color:black;
+  width: 100%;
+}
+
+.custom-text { color: white; } /* Replace with your desired color */
+.custom-text1{
+  color: black;
+}
+
+/* FORM STYLING*/
+
+.form-container {
+  width: 50%;  /* Default width */
+  max-width: 600px;  /* Max width */
+}
+
+.btn-purchase {
+  border-radius: 50px;
+  background-color: rgb(223, 158, 74) !important;
+  color: black;
+  font-weight: bold;
+  height: 50px;
+  border: none;
+}
+
+.btn-purchase:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) { 
+  .form-container {
+      width: 90%;  /* Mobile view me width zyada ho */
+  }
+}
+
+
+/*Navbar Styling*/
+.custom-btn{
+  background-color: black;
+  color: white;
+}
+.custom-btn-1{
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border: none;
+  padding: 0 20px;
+  width: 100px;
+  height: 45px;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 5px;
+  
+}
+.custom-btn-2{
+  color: white;
+}
+
+.custom-btn-1:hover{
+  color:wheat;
+  padding: 0 20px;
+  width: 100px;
+  height: 45px;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+.custom-btn-2:hover{
+  color: wheat;
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: black;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover::after{
+  transform: scaleX(1);
+}
+
+  /* Styling of form */
+  .button1{
+    align-items: center;
+    border: 2px solid black;
+    color: black;
+    border-radius: 50px;
+    height: 50px;
+    width: 500px;
+    background-color: rgb(216, 176, 101) ;
+  }
+  .button1:hover{
+    background-color: black;
+    color: wheat;
+  }

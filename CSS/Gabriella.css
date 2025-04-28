@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat !important;
+}
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.breadcrumb-container a {
+    text-decoration: none;
+    color: #666;
+}
+
+.breadcrumb-container a:hover {
+    color: #000;
+}
+
+.breadcrumb-container span {
+    font-weight: bold;
+    color: #333;
+}
+
+.Style-line {
+    width: 100%;
+    height: 2px;
+    background-color: #e2a478;
+    margin-top: 5px;
+}
+
+.bg-custom2{
+    background-color: rgb(202, 168, 104);
+}
+.bg-custom{
+    background-color: wheat !important;
+    color: black;
+}
+.bg-custom5{
+    background-color: rgb(216, 176, 101); 
+}
+
+.button{
+    border: black solid 3px;
+    color: black;
+    border-radius: 50px;
+    height: 60px;
+    width: 190px;
+    background-color: rgb(216, 176, 101) ;
+  
+}
+.button:hover{
+    border: black solid 3px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    height: 60px;
+    
+}
+
+/* full view of image in mobile screen*/
+.content-container {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Footer Styling*/
+.custom-bg{
+    background-color: rgb(184, 159, 114);
+    width: 100%;
+}
+
+.custom-bg:hover{
+    color: rgb(44, 42, 42);
+    background-color: rgb(184, 159, 114);
+    width: 100%;
+}
+i:hover{
+    color: black;
+    width: 100%;
+}
+
+
+/*Navbar Styling*/
+.custom-btn{
+    background-color: black;
+    color: white;
+}
+.custom-btn-1{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+    padding: 0 20px;
+    width: 100px;
+    height: 45px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    
+}
+.custom-btn-2{
+    color: white;
+}
+
+.custom-btn-1:hover{
+    color:wheat;
+    padding: 0 20px;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+.custom-btn-2:hover{
+    color: wheat;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-link:hover::after{
+    transform: scaleX(1);
+  }
+
+    /* Styling of form */
+    .button1{
+        align-items: center;
+        border: 2px solid black;
+        color: black;
+        border-radius: 50px;
+        height: 50px;
+        width: 500px;
+        background-color: rgb(216, 176, 101) ;
+      }
+      .button1:hover{
+        background-color: black;
+        color: wheat;
+      }
+

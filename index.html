@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="h style.css">
+  <script src="../js/validation.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="../IMAGES/final.png">
+  <title>Online Fashion Shopping</title>
+  <style>
+    /* Remove default password reveal button */
+    input[type="password"]::-ms-reveal,
+    input[type="password"]::-ms-clear {
+      display: none;
+    }
+
+    input[type="password"] {
+      background: none !important;
+      background-image: none !important;
+    }
+
+    /* Error message style */
+    .error {
+      color: red;
+      font-size: 0.875em;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+
+<body>
+
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div style="display: inline-block; background-color: wheat; padding: 10px; border-radius: 10px;">
+              <img src="/IMAGES/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12">
+      
+            <nav class="navbar navbar-expand-md navbar-light">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link" href="HTML/Howitworks.html">HOWITWORK</a>
+                    <a class="nav-link" href="HTML/Membership Plan $ Pricing.html">MEMBERSHIP</a>
+                    <a class="nav-link" href="HTML/Services.html">SERVICES</a>
+                    <a class="nav-link" href="HTML/giftcard.html">GIFTCARD</a>
+                    <a class="nav-link" href="HTML/Stylist.html">STYLIST</a>
+                    <a class="nav-link" href="HTML/compare.html">COMPARED </a>
+                    <a class="nav-link" href="HTML/lookbook.html">LOOKBOOK</a>
+                    <a class="nav-link" href="HTML/contact.html">CONTACT</a>
+                  </div>
+      
+                  <div class="d-flex gap-2">  <!-- Buttons container -->
+                    <!-- LOGIN Button trigger modal -->
+                    <button type="button" class="custom-btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      LOGIN
+                    </button>
+        
+                    <!-- JOIN Button trigger modal -->
+                    <button type="button" class="custom-btn-1" data-bs-toggle="modal" data-bs-target="#joinModal">
+                      JOIN
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+<!-- LOGIN Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="myForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Please Enter Your Name*">
+            <div class="error" id="nameError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="email" placeholder="Please Enter Your E-mail*">
+            <div class="error" id="emailError"></div>
+          </div>
+          <div class="mb-3 position-relative">
+            <label for="loginPassword" class="form-label">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="loginPassword" placeholder="Create a password*" aria-describedby="toggleLoginPassword">
+              <button class="btn btn-outline-secondary" type="button" id="toggleLoginPassword">
+                <i class="fa fa-eye" id="eyeIconLogin"></i>
+              </button>
+            </div>
+            <div class="error" id="loginPasswordError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" placeholder="Please Enter Your Message*" rows="4"></textarea>
+            <div class="error" id="messageError"></div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="button1" form="myForm">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JOIN Modal -->
+<div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="joinModalLabel">JOIN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="joinForm">
+          <div class="mb-3">
+            <label for="joinName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="joinName" placeholder="Enter your full name*">
+            <div class="error" id="joinNameError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="joinEmail" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="joinEmail" placeholder="Enter your e-mail*">
+            <div class="error" id="joinEmailError"></div>
+          </div>
+          <div class="mb-3 position-relative">
+            <label for="joinPassword" class="form-label">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="joinPassword" placeholder="Create a password*" aria-describedby="toggleJoinPassword">
+              <button class="btn btn-outline-secondary" type="button" id="toggleJoinPassword">
+                <i class="fa fa-eye" id="eyeIconJoin"></i>
+              </button>
+            </div>
+            <div class="error" id="joinPasswordError"></div>
+          </div>
+          <div class="mb-3">
+            <label for="joinMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="joinMessage" placeholder="Your message (optional)" rows="4"></textarea>
+            <div class="error" id="joinMessageError"></div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="button1" form="joinForm">Join</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+</header>
+
+
+<hr>
+
+
+<section class="banner">
+<div class="container-fluid bg-custom1">
+<div class="row align-items-center">
+<div class="col-md-6 text-content">
+<h1>REDISCOVER YOUR CLOSET & LOVE WHAT YOU OWN</h1>
+<p><strong>Get custom looks</strong> with your favorite wardrobe items.</p>
+<p>Meet virtually with <strong>expert stylists you trust.</strong></p>
+
+</div>
+<div class="col-md-6 image-content">
+<img src="/IMAGES/index.jpg" class="img-fluid" alt="Fashion Model">
+</div>
+</div>
+</div>
+</section>
+
+<hr>
+
+<br>
+
+<div class="Howitwork">
+  <h2 class="h2-1" style="text-align: center;">HOW IT WORK'S</h2>
+  <p class="P-1" style="text-align: center;">Do you have a closet full of clothes and have nothing to wear? We can help restyle what you own.</p>
+  <h3 class="h3-1" style="text-align: center;">HERE ARE 3 EASY STEPTS:</h3>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-12" id="col-1">
+      <img src="IMAGES/post1.jpeg" class="img-fluid howitworks-img" alt="image">
+      <h3 class="h3-2" style="text-align: center;">Step 1: Take Our Style Quiz</h3>
+      <p class="p-2">Take our style quiz and get matched with the right stylist for you.</p>
+    </div>
+
+    <div class="col-md-4 col-12" id="col-2">
+      <img src="IMAGES/post2.jpeg" class="img-fluid howitworks-img" alt="image">
+      <h3 class="h3-2" style="text-align: center;">Step 2: Upload Your Wardrobe</h3>
+      <p class="p-2">Upload the pieces in your wardrobe you want styled.</p>
+    </div>
+
+    <div class="col-md-4 col-12" id="col-3">
+      <img src="IMAGES/post3.jpeg" class="img-fluid howitworks-img" alt="image">
+      <h3 class="h3-2" style="text-align: center;">Step 3: Meet Your Match</h3>
+      <p class="p-2">Virtually meet your personal stylist to create custom looks based on your body, lifestyle and budget.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Add this style -->
+<style>
+  .howitworks-img {
+    width: 100%;
+    height: 300px; /* ya jitna height tum chaho */
+    object-fit: cover;
+    border-radius: 8px; /* optional: thoda rounded look dena ho */
+  }
+</style>
+
+<!-- <br> -->
+ <hr>
+<p class="container-fluid" style="text-align: center;">The Stīl (pronounced style) Trust is the world's only PATENTED STYLEMATCH 
+service that virtually curates outfits using your favorite wardrobe items. Each outfit is tailored to your body shape, style, and 
+budget. Online Fashion Shopping® is your trusted style partner, and our team of expert stylists will help restyle what you own and build new 
+outfits that are perfect for you.</p>
+<div class="d-flex justify-content-center align-items-center">
+<button class="btn custom-btn rounded-pill px-4 py-2 custom-btn mb-4">GET STARTED</button>
+
+</div>
+</div>
+
+<div class="container-fluid bg-custom5 mb-5">
+  <div class="row justify-content-center text-center py-5">
+    <div class="col-md-8 col-12 px-0 d-flex flex-column align-items-center justify-content-center">
+      <h1 class="mb-2" style="font-size: 6rem; line-height: 1; font-family: 'Times New Roman', Times, serif; color: white;">
+        10<sup>%</sup> off
+      </h1>
+      <p class="mb-2" style="font-size: 1.5rem;">
+        your first year of membership - plus,<br>
+        Style Inspiration & Tips to help you look and feel your best!
+      </p>
+
+      <!-- Email Sign Up Box Starts -->
+      <div class="d-flex justify-content-center align-items-center mt-4 ">
+        <div class="signup-container d-flex rounded-pill overflow-hidden">
+          <input type="email" id="emailInput" placeholder="EMAIL ADDRESS"
+            class="border-0 px-3 py-2"
+            style="border-radius: 50px 0 0 50px; width: 250px; height: 50px; outline: none;">
+          <button id="signUpBtn "
+            style="background-color: rgb(202, 168, 104); color: rgb(165, 113, 15); border: none; padding: 10px 25px; font-weight: bold; border-radius: 0 50px 50px 0; cursor: pointer;" >
+            Sign Up
+          </button>
+        </div>
+      </div>
+      <div id="message" class="mt-5 text-white" style="font-size: 1.25rem;"></div>
+      <!-- Email Sign Up Box Ends -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- JavaScript Code Must Be At Bottom -->
+<script>
+  // Wait until everything is loaded
+  window.onload = function () {
+    document.getElementById("signUpBtn").addEventListener("click", function () {
+      const email = document.getElementById("emailInput").value.trim();
+      const message = document.getElementById("message");
+
+      if (email === "") {
+        message.textContent = "Please enter your email address!";
+        message.style.color = "yellow";
+      } else {
+        message.textContent = "Thank you, you have been signed up!";
+        message.style.color = "white";
+      }
+    });
+  };
+</script>
+
+<div class="container-fluid p-0">
+  <div class="row g-0">
+      <div class="col-12 col-md-6 d-flex align-items-center justify-content-center text-center px-4 bg-custom2 order-2 order-md-1" style="font-size: large;">
+          <div>
+              <h2 class="mb-4 mt-4">One of the BEST elements is <br> the ability to input items you <br>ALREADY OWN and love. </h2>
+              <p class="mb-3">already owned blue jeans and had been <br> wanting to incorporate them into different <br>looks. This look was something a little bit <br> different from my usual and I LOVED that. So <br>often plus size people are excluded from any <br>element of fashion that feels luxury, especially <br> services like personally styling. I'm thrilled to <br>have found The Stīl Trust!</p>
+              <p>— Callie R.</p>
+          </div>
+      </div>
+      <div class="col-md-6 p-0 image-container order-1 order-md-2">
+          <img src="IMAGES/index1.webp" alt="services" class="img-fluid w-100">
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid  p-0">
+  <div class="row g-0 content-center">
+      <div class="col-md-6 p-0 image-container">
+          <img src="IMAGES/index2.webp" alt="services" class="img-fluid w-100">
+      </div>
+      <div class="col-12 col-md-6 d-flex align-items-center justify-content-center text-center px-4 bg-custom1 order-2 order-md-1" style="font-size: large;">
+        <div>
+            <h2 class="mb-4 mt-4" >I had this blouse sitting in <br>  my closet with the tag still  <br> on it! </h2>
+            <p class="mb-3">I loved this black blouse and it fit me perfectly <br> when I bought it, but I didn't have time to look <br> for a complete outfit. I thought I'd find <br> something in my closet to go with it but I
+               <br>never did. I booked a StyleMatch and met <br>virtually with my stylist. I wanted a fun, 'date- <br> night' look for spring. Wow! I was blown away <br>with how well she styled me!”</p>
+            <p>— Ashley D.</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid p-0">
+  <div class="row g-0">
+      <div class="col-12 col-md-6 d-flex align-items-center justify-content-center text-center px-4 bg-custom2 order-2 order-md-1" style="font-size: large;">
+          <div>
+              <h2 class="mb-4 mt-4">My stylist was spot on with <br> this look she chose for me </h2>
+              <p class="mb-3">If you've ever struggled with putting looks <br> together, you've got to check out this site! I <br>had this printed skirt sitting in my closet but 
+              <br> didn't know how to style it. I needed a <br>'professional work-look' that I can transition <br>into a 'dinner out with friends' look and they
+               <br> absolutely delivered!</p>
+              <p>— Brittany C..</p>
+          </div>
+      </div>
+      <div class="col-md-6 p-0 image-container order-1 order-md-2">
+          <img src="IMAGES/index3.webp" alt="services" class="img-fluid w-100">
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center my-5">
+  <div class="row g-4">
+      <div class="col-md-4">
+          <div class="card stylist-card">
+              <img src="IMAGES/Sandy1.jpg" class="card-img-top" alt="Nicole">
+              
+          </div>
+          <div class="d-flex justify-content-center mx-auto mt-4">
+            <a href="Stylist.html" target="_blank">
+             <button class="button"> STYLIISTS</button>
+            </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card stylist-card">
+              <img src="IMAGES/Sandy2.jpg" class="card-img-top" alt="Christina">
+              
+          </div>
+          <div class="d-flex justify-content-center mx-auto mt-4">
+            <a href="lookbook.html" target="_blank">
+             <button class="button">LOOKBOOK</button>
+            </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card stylist-card">
+              <img src="IMAGES/Sandy3.jpg" class="card-img-top" alt="Gabriella">
+              
+          </div>
+          <div class="d-flex justify-content-center mx-auto mt-4">
+            <a href="giftcard.html" target="_blank">
+             <button class="button">GIFT CARD</button>
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid  p-0">
+  <div class="row g-0 content-center">
+      <div class="col-md-5 p-0 image-container">
+          <img src="IMAGES/stylist5.jpg" alt="services" class="img-fluid w-100">
+      </div>
+      <div class="col-12 col-md-7 d-flex align-items-center justify-content-center text-center px-4 bg-custom1 order-2 order-md-1">
+        <div>
+            <p class="mb-4 mt-4" style="font-size: large;" >I launched this business out of my own need. As an Emergency Medicine Doctor, I <br>  needed help with my own personal style. The system I designed is a patented
+               <br> StyleMatch service that has been transformational for me. After investing in wardrobe <br>  items that fit me perfectly, I still had trouble styling them and putting complete outfits
+              <br>together. With The Online Shopping I now have a closet full of outfits that I love. I can’t tell you <br>how great I feel when I look my best. As a physician, it was hard to imagine that clothes
+            <br>could play such an integral part in how I felt and in boosting my confidence.</p>
+            <p class="mb-3" style="font-size: large;">What has been even more remarkable for me is to be able to share this experience with <br>our clients and give them the opportunity to find confidence in every outfit they wear, <br> starting with what they own. Our clients have told us how grateful they are that we’ve <br>finally developed a personal styling service that caters to their body shape and budget. <br> Most importantly, it allows them to fully maximize their current wardrobe.</p>
+            <p>Our purpose is to get you looking and feeling your best while eliminating the struggle <br> of figuring out what to wear. We’ll make the most out of your existing wardrobe and get you <br> into outfits that make you look like you stepped off the runway! When you look <br> good, you’ll feel good, and it will show in everything you do. You deserve this!</p>
+            <p>— Asbasia Mikhail, Founder + President</p>
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row justify-content-center text-center ">
+      <div class="col-md-8 col-12">
+        <h1 class="mt-4">Brands We Trust</h1>
+          <p class="mb-4" style="font-size: large;">While our stylists consider all brands as they make their recommendations, at The Stīl Trust, it is our policy to only<br>recommend the brands that best fit your personal styling needs, budget, and preferences.</p>
+           <p class="mb-5" style="font-size: large;">The Online Fashion Shopping personal stylists are seasoned online shopping experts and know which brands and vendors have the <br> best shipping & return policies, customer service, and product quality to ensure that you have a streamlined and <br> safe online shopping experience.</p>
+          
+          
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row justify-content-center text-center  bg-custom1">
+      <div class="col-md-8 col-12">
+        <h1 class="mt-4">100% Guarantee to Fall in Love with Your Closet Again!</h1>
+        <div class="d-flex justify-content-center mx-auto mt-4">
+          <a href="giftcard.html" target="_blank">
+           <button class="button mb-4">GIFT CARD</button>
+          </a>
+      </div> 
+          
+          
+      </div>
+  </div>
+</div>
+
+
+
+
+<footer class="w-100 custom-bg text-center pt-4 position-relative">
+  <div class="container-fluid">
+    <section class="mb-4 d-flex flex-nowrap justify-content-center align-items-center w-100 overflow-auto">
+      <!-- Facebook -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.facebook.com/" target="_blank" role="button">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://twitter.com/" target="_blank" role="button">
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <!-- Google (usually Gmail or Google account) -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.google.com/" target="_blank" role="button">
+        <i class="fab fa-google"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.instagram.com/" target="_blank" role="button">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://www.linkedin.com/" target="_blank" role="button">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <!-- Github -->
+      <a class="btn btn-outline mx-2 border-0 shadow-none p-0" href="https://github.com/" target="_blank" role="button">
+        <i class="fab fa-github"></i>
+      </a>
+    </section>
+  </div>
+
+  <div class="w-100 p-3 text-white" style="background-color: black;">
+    © 2024 Copyright:
+    <a class="fw-bold text-white" href="index.html" target="_blank">OnlineFashionShopping.com</a>
+  </div>
+</footer>
+</body>
+</html>
